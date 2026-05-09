@@ -48,10 +48,18 @@ This is a transparent implementation. It is designed to make bytes, fields, pari
 
 It is not flight software and should not be used for operational spacecraft commanding or telemetry processing without independent conformance testing.
 
-## Repository name
+## License
 
-Recommended GitHub name:
+This project is licensed under the MIT License. See `LICENSE`.
 
-```text
-ccsds-tm-tc-formatting-lab
-```
+## Credit
+
+If you use, modify, or redistribute this software, keep the credit and license notice:
+
+    Developed by Wahyudi Hasbi | Licensed under the MIT License
+
+## Citation
+
+If you use this software in academic work, reports, or publications, please cite:
+
+    Wahyudi Hasbi. (2026). CCSDS-TM-TC-Formatting-lab. Zenodo. https://doi.org/10.5281/zenodo.20091994
