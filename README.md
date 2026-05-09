@@ -1,4 +1,5 @@
 # CCSDS-TM-TC-Formatting-lab
+
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20091994.svg)](https://doi.org/10.5281/zenodo.20091994)
 
 Developed by **Wahyudi Hasbi**  
@@ -13,8 +14,8 @@ This public version is generic. It does not use any mission-specific hard-coded 
 - User-defined mission ID text carried inside the Packet Data Field
 - Up to 50 numeric TM sensor records
 - TM Space Packet construction
-- TM RS(255,223), `E=16`, full encode/decode trace
-- TM RS interleaving, default `I=5`
+- TM RS(255,223), `E = 16`, full encode/decode trace
+- TM RS interleaving, default `I = 5`
 - TM pseudo-randomizer demonstration and ASM/CADU generation
 - Up to 10 switch ON/OFF TC commands
 - Up to 5 attitude instruction commands for OBDH → ADCS pointing simulation
@@ -50,29 +51,33 @@ It is not flight software and should not be used for operational spacecraft comm
 
 ## Repository structure
 
-    ccsds-tm-tc-formatting-lab/
-    ├── ccsds_gui.py                 # Main GUI application
-    ├── ccsds_packets.py             # CCSDS Space Packet construction and parsing
-    ├── ccsds_rs.py                  # Reed-Solomon RS(255,223) encoder/decoder
-    ├── ccsds_tm.py                  # TM chain: Space Packet, RS, interleaving, randomizer, ASM/CADU
-    ├── ccsds_tc.py                  # TC chain: Space Packet, TC Transfer Frame, FECF
-    ├── payloads.py                  # TM sensor and TC command payload encoding
-    ├── requirements.txt             # Python requirements
-    ├── run_gui_windows.bat          # Windows launcher
-    ├── README.md                    # Project overview and usage
-    ├── LICENSE                      # MIT License
-    ├── CITATION.cff                 # Citation metadata and Zenodo DOI
-    ├── .gitignore                   # Files ignored by Git
-    │
-    ├── docs/
-    │   ├── CONSTANTS_AND_FIELDS.md  # CCSDS constants and field explanations
-    │   └── SCOPE.md                 # Scope and implementation boundary
-    │
-    ├── examples/
-    │   └── demo_config.json         # Example input configuration
-    │
-    └── tests/
-        └── test_smoke.py            # Basic TM/TC smoke test
+```text
+ccsds-tm-tc-formatting-lab/
+├── ccsds_gui.py                 # Main GUI application
+├── ccsds_packets.py             # CCSDS Space Packet construction and parsing
+├── ccsds_rs.py                  # Reed-Solomon RS(255,223) encoder/decoder
+├── ccsds_tm.py                  # TM chain: Space Packet, RS, interleaving, randomizer, ASM/CADU
+├── ccsds_tc.py                  # TC chain: Space Packet, TC Transfer Frame, FECF
+├── payloads.py                  # TM sensor and TC command payload encoding
+├── requirements.txt             # Python requirements
+├── run_gui_windows.bat          # Windows launcher
+├── README.md                    # Project overview and usage
+├── LICENSE                      # MIT License
+├── CITATION.cff                 # Citation metadata and Zenodo DOI
+├── .gitignore                   # Files ignored by Git
+│
+├── docs/
+│   ├── CONSTANTS_AND_FIELDS.md  # CCSDS constants and field explanations
+│   └── SCOPE.md                 # Scope and implementation boundary
+│
+├── examples/
+│   └── demo_config.json         # Example input configuration
+│
+└── tests/
+    └── test_smoke.py            # Basic TM/TC smoke test
+```
+
+The project is separated by function: packet handling, telemetry formatting, telecommand formatting, Reed-Solomon coding, payload encoding, GUI operation, documentation, examples, and tests.
 
 ## License
 
@@ -82,10 +87,14 @@ This project is licensed under the MIT License. See `LICENSE`.
 
 If you use, modify, or redistribute this software, keep the credit and license notice:
 
-    Developed by Wahyudi Hasbi | Licensed under the MIT License
+```text
+Developed by Wahyudi Hasbi | Licensed under the MIT License
+```
 
 ## Citation
 
 If you use this software in academic work, reports, or publications, please cite:
 
-    Wahyudi Hasbi. (2026). CCSDS-TM-TC-Formatting-lab (v1.0.0). Zenodo. https://doi.org/10.5281/zenodo.20091994
+```text
+Wahyudi Hasbi. (2026). CCSDS-TM-TC-Formatting-lab (v1.0.0). Zenodo. https://doi.org/10.5281/zenodo.20091994
+```
