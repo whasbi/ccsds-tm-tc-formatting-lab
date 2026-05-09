@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata from this file."
+title: "ccsds-tm-tc-formatting-lab"
+authors:
+  - family-names: "Hasbi"
+    given-names: "Wahyudi"
+year: 2026
+version: "0.1.0"
+doi: "10.5281/zenodo.20091994"
+url: "https://doi.org/10.5281/zenodo.20091994"
+repository-code: "https://github.com/whasbi/ccsds-tm-tc-formatting-lab"
+license: "MIT"
+abstract: "A transparent CCSDS TM/TC formatting lab for telemetry and telecommand examples, including Space Packets, TM RS coding and decoding, TM interleaving/randomizer/ASM, and TC Transfer Frame/FECF validation."
+keywords:
+  - CCSDS
+  - telemetry
+  - telecommand
+  - Reed-Solomon
+  - Space Packet
+  - TC Transfer Frame
+  - FECF
+  - ground station
