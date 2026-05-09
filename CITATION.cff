@@ -5,7 +5,7 @@ authors:
   - family-names: "Hasbi"
     given-names: "Wahyudi"
 year: 2026
-version: "0.1.0"
+version: "v1.0.0"
 doi: "10.5281/zenodo.20091994"
 url: "https://doi.org/10.5281/zenodo.20091994"
 repository-code: "https://github.com/whasbi/ccsds-tm-tc-formatting-lab"
