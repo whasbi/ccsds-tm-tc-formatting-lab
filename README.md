@@ -1,4 +1,4 @@
-# ccsds-tm-tc-formatting-lab
+# CCSDS-TM-TC-Formatting-lab
 
 Transparent CCSDS TM/TC formatting lab for study.
 
