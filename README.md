@@ -50,29 +50,29 @@ It is not flight software and should not be used for operational spacecraft comm
 
 ## Repository structure
 
-ccsds-tm-tc-formatting-lab/
-├── ccsds_gui.py                 # Main GUI application
-├── ccsds_packets.py             # CCSDS Space Packet construction and parsing
-├── ccsds_rs.py                  # Reed-Solomon RS(255,223) encoder/decoder
-├── ccsds_tm.py                  # TM chain: Space Packet, RS, interleaving, randomizer, ASM/CADU
-├── ccsds_tc.py                  # TC chain: Space Packet, TC Transfer Frame, FECF
-├── payloads.py                  # TM sensor and TC command payload encoding
-├── requirements.txt             # Python requirements
-├── run_gui_windows.bat          # Windows launcher
-├── README.md                    # Project overview and usage
-├── LICENSE                      # MIT License
-├── CITATION.cff                 # Citation metadata and Zenodo DOI
-├── .gitignore                   # Files ignored by Git
-│
-├── docs/
-│   ├── CONSTANTS_AND_FIELDS.md  # CCSDS constants and field explanations
-│   └── SCOPE.md                 # Scope and implementation boundary
-│
-├── examples/
-│   └── demo_config.json         # Example input configuration
-│
-└── tests/
-    └── test_smoke.py            # Basic TM/TC smoke test
+    ccsds-tm-tc-formatting-lab/
+    ├── ccsds_gui.py                 # Main GUI application
+    ├── ccsds_packets.py             # CCSDS Space Packet construction and parsing
+    ├── ccsds_rs.py                  # Reed-Solomon RS(255,223) encoder/decoder
+    ├── ccsds_tm.py                  # TM chain: Space Packet, RS, interleaving, randomizer, ASM/CADU
+    ├── ccsds_tc.py                  # TC chain: Space Packet, TC Transfer Frame, FECF
+    ├── payloads.py                  # TM sensor and TC command payload encoding
+    ├── requirements.txt             # Python requirements
+    ├── run_gui_windows.bat          # Windows launcher
+    ├── README.md                    # Project overview and usage
+    ├── LICENSE                      # MIT License
+    ├── CITATION.cff                 # Citation metadata and Zenodo DOI
+    ├── .gitignore                   # Files ignored by Git
+    │
+    ├── docs/
+    │   ├── CONSTANTS_AND_FIELDS.md  # CCSDS constants and field explanations
+    │   └── SCOPE.md                 # Scope and implementation boundary
+    │
+    ├── examples/
+    │   └── demo_config.json         # Example input configuration
+    │
+    └── tests/
+        └── test_smoke.py            # Basic TM/TC smoke test
 
 ## License
 
