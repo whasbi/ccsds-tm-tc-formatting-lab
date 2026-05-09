@@ -1,4 +1,8 @@
 # CCSDS-TM-TC-Formatting-lab
+[https://doi.org/10.5281/zenodo.20091994](https://zenodo.org/badge/DOI/10.5281/zenodo.20091994.svg)
+
+Developed by **Wahyudi Hasbi**  
+Licensed under the **MIT License**
 
 Transparent CCSDS TM/TC formatting lab for study.
 
