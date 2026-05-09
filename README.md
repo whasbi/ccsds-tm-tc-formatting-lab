@@ -24,10 +24,28 @@ This public version is generic. It does not use any mission-specific hard-coded 
 - Optional TC FECF validation
 - Full display of constants, configuration fields, byte values, bit positions, and timing
 
-## Not implemented
+## Implementation boundary
 
+This software follows selected CCSDS TM/TC concepts for study and demonstration. It is designed to make bytes, fields, parity, correction, and frame validation visible.
+
+It does not claim full CCSDS conformance or flight qualification, and it should not be used for operational spacecraft commanding or telemetry processing without independent conformance testing.
+
+Implemented:
+
+- Space Packet primary-header construction
+- TM RS(255,223) coding and decoding trace
+- TM RS interleaving
+- TM pseudo-randomizer demonstration
+- ASM/CADU-style construction
+- TC Transfer Frame primary header
+- Optional TC FECF calculation and validation
+
+The following items are outside the scope of the v1.0.0 release:
+
+- Full TM Transfer Frame protocol behavior
 - TC BCH/CLTU
 - COP-1
+- SDLS/security
 - Authentication/security services
 - Flight-qualified CCSDS conformance certification
 
@@ -43,11 +61,11 @@ On Windows, with Python installed:
 py ccsds_gui.py
 ```
 
-## The boundary
+## Test
 
-This is a transparent implementation. It is designed to make bytes, fields, parity, correction, and frame validation visible.
-
-It is not flight software and should not be used for operational spacecraft commanding or telemetry processing without independent conformance testing.
+```bash
+python tests/test_smoke.py
+```
 
 ## References
 
@@ -58,7 +76,7 @@ This software follows the structure and terminology of the following CCSDS Blue 
    Link: https://ccsds.org/publications/allpubs/entry/3264/
 
 2. **CCSDS 132.0-B-3 — TM Space Data Link Protocol**, Issue 3, October 2021.  
-   Used for TM data-link and TM Transfer Frame concepts.  
+   Listed as TM data-link context. Full TM Transfer Frame protocol behavior is not implemented in this software.  
    Link: https://ccsds.org/publications/allpubs/entry/3274/
 
 3. **CCSDS 131.0-B-5 — TM Synchronization and Channel Coding**, Issue 5, September 2023.  
@@ -100,7 +118,6 @@ ccsds-tm-tc-formatting-lab/
 └── tests/
     └── test_smoke.py            # Basic TM/TC smoke test
 ```
-
 The project is separated by function: packet handling, telemetry formatting, telecommand formatting, Reed-Solomon coding, payload encoding, GUI operation, documentation, examples, and tests.
 
 ## License
