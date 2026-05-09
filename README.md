@@ -50,7 +50,6 @@ It is not flight software and should not be used for operational spacecraft comm
 
 ## Repository structure
 
-```text
 ccsds-tm-tc-formatting-lab/
 ├── ccsds_gui.py                 # Main GUI application
 ├── ccsds_packets.py             # CCSDS Space Packet construction and parsing
