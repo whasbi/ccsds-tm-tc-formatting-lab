@@ -1,5 +1,5 @@
 # CCSDS-TM-TC-Formatting-lab
-[https://doi.org/10.5281/zenodo.20091994](https://zenodo.org/badge/DOI/10.5281/zenodo.20091994.svg)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20091994.svg)](https://doi.org/10.5281/zenodo.20091994)
 
 Developed by **Wahyudi Hasbi**  
 Licensed under the **MIT License**
