@@ -51,26 +51,27 @@ It is not flight software and should not be used for operational spacecraft comm
 
 ## References
 
-This software is based on the following CCSDS Blue Books and related CCSDS recommendations:
+This software follows the structure and terminology of the following CCSDS Blue Books and CCSDS recommendations:
 
 1. **CCSDS 133.0-B-2 — Space Packet Protocol**, Issue 2, June 2020.  
    Used for the Space Packet concept and the 6-octet Space Packet Primary Header.  
-   CCSDS describes this recommendation as specifying the protocols, services, and procedures for CCSDS Packets. :contentReference[oaicite:0]{index=0}
+   Link: https://ccsds.org/publications/allpubs/entry/3264/
 
 2. **CCSDS 132.0-B-3 — TM Space Data Link Protocol**, Issue 3, October 2021.  
-   Used as the TM data-link reference for TM Transfer Frame concepts.  
-   CCSDS describes this recommendation as specifying the protocol, services, and procedures for the CCSDS Version-1 Synchronous Transfer Frame. :contentReference[oaicite:1]{index=1}
+   Used for TM data-link and TM Transfer Frame concepts.  
+   Link: https://ccsds.org/publications/allpubs/entry/3274/
 
 3. **CCSDS 131.0-B-5 — TM Synchronization and Channel Coding**, Issue 5, September 2023.  
-   Used for TM synchronization/channel-coding concepts such as Reed-Solomon coding, interleaving, randomization, and attached sync marker/CADU-style processing.  
-   CCSDS describes this recommendation as containing specifications for synchronous communications links. :contentReference[oaicite:2]{index=2}
+   Used for TM Reed-Solomon coding, interleaving, pseudo-randomization, synchronization, ASM, and CADU-related concepts.  
+   Link: https://ccsds.org/publications/allpubs/entry/3193/
 
 4. **CCSDS 232.0-B-4 — TC Space Data Link Protocol**, Issue 4, October 2023.  
-   Used for the TC Transfer Frame and FECF-related TC data-link concepts.  
-   This project implements only TC Space Packet to TC Transfer Frame/FECF demonstration; TC BCH/CLTU and COP-1 are not implemented.
+   Used for TC Transfer Frame and FECF concepts.  
+   Link: https://ecss.nl/standard/ecss-e-as-50-25c-rev-1-adoption-notice-of-ccsds-232-0-b-4-tc-space-data-link-protocol/
 
 5. **CCSDS 232.1-B-2 — Communications Operation Procedure-1**, Issue 2, September 2010.  
-   Listed for context only. COP-1 is not implemented in this software. CCSDS describes this recommended standard as specifying COP-1 used by the TC Space Data Link Protocol. :contentReference[oaicite:3]{index=3}
+   Listed for context only. COP-1 is not implemented in this software.  
+   Link: https://ccsds.org/publications/allpubs/entry/3269/
 
 ## Repository structure
 
