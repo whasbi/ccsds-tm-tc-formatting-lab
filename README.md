@@ -88,4 +88,4 @@ If you use, modify, or redistribute this software, keep the credit and license n
 
 If you use this software in academic work, reports, or publications, please cite:
 
-    Wahyudi Hasbi. (2026). CCSDS-TM-TC-Formatting-lab. Zenodo. https://doi.org/10.5281/zenodo.20091994
+    Wahyudi Hasbi. (2026). CCSDS-TM-TC-Formatting-lab (v1.0.0). Zenodo. https://doi.org/10.5281/zenodo.20091994
