@@ -1,0 +1,40 @@
+{
+  "mission_id": "DEMO-SAT",
+  "tm_apid": 100,
+  "tc_apid": 200,
+  "tc_scid": "0x2AA",
+  "tm_bitrate_bps": 9600,
+  "tc_bitrate_bps": 1200,
+  "sensors": [
+    {
+      "name": "BAT_V",
+      "value": 7.42,
+      "unit": "V",
+      "scale": 0.01,
+      "parameter_id": "0x0001"
+    },
+    {
+      "name": "BAT_I",
+      "value": 0.85,
+      "unit": "A",
+      "scale": 0.01,
+      "parameter_id": "0x0002"
+    }
+  ],
+  "switch_commands": [
+    {
+      "name": "UHF_TX",
+      "command_id": "0x0001",
+      "state": "ON"
+    }
+  ],
+  "attitude_commands": [
+    {
+      "name": "POINT_TARGET_1",
+      "command_id": "0x0101",
+      "x_deg": 10.5,
+      "y_deg": -2.0,
+      "z_deg": 35.0
+    }
+  ]
+}
